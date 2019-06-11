@@ -1,0 +1,285 @@
+*{
+    margin: auto;
+}
+body{
+    font-family: 'Dancing Script';
+    background-color: #02010a;
+}
+
+/*CABECERA*/
+header{
+    background-color: #5b7989;
+    padding: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 70px;
+    color: white;
+}
+.head1{ /*COLUMNA DE LA IZQ. HEADER*/
+    float: left;
+    width: 80%;
+}
+.head2{
+    float: left;
+    width: 20%; /*COLUMNA DE LA DER. HEADER*/
+    padding-top: 10px;
+    text-align: right;
+}
+
+
+
+
+
+/*PONER SOMBREADO TEXTO EN HEADER H1*/
+.head1>h1{
+    text-shadow: 2px 2px 2px #02010a;
+    font-size: 40px;
+}
+
+/*HIPERVINCULO*/
+/*QUITAR DECORACION A LOS HIPERVINCULOS*/
+.head2>a{
+
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    text-align: right;
+}
+
+/*CONTENEDORES*/
+
+/*CAJA PRINCIPAL DEL PRIMER ARTICULO*/
+.box{
+    overflow: hidden;
+    align-items: center;
+    background-color: #82c3a6;
+    padding: 5px;
+}
+
+/*CAJA DOS DONDE VAN IMAGENES SECUNDARIAS*/
+.box2{ /*CAJA SECUNDARIA DE IMAGENES*/
+    overflow: hidden;
+    background-color:  #d5c75f;
+    border: 1px;
+    text-align: center;
+    height: 500px;
+}
+
+.box2left{ /*CAJA IZQUIERDA*/
+    width: 50%;
+    float: left;
+}
+.box2left>p{ /*DISEÑO DE TEXTO DE CAJA IZQ.*/
+    font-size: 20px;
+}
+
+.box2right{ /*CAJA DERECHA*/
+    width: 50%;
+    float: left;
+}
+.box2right>p{ /*DISEÑO DE TEXTO DE CAJA DER.*/
+    font-size: 20px;
+}
+
+/*CAJA DE PAISAJE 3 COLUMNAS FOTOGRAFIAS*/
+.box3{ /**/
+    overflow: hidden;
+    background-color:  #d5c75f;
+    border: 1px;
+    text-align: center;
+    height: 600px;
+    padding-top: 30px;
+}
+.box3left{ /*CAJA IZQUIERDA*/
+    float: left;
+    width: 30%;
+    margin: 20px;
+    height: 250px;
+}
+.box3middle{ /*CAJA DE EN MEDIO*/
+    float: left;
+    width: 30%;
+    margin: 20px;
+    height: 250px;
+}
+.box3right{ /*CAJA DERECHA*/
+    float: left;
+    width: 30%;
+    margin: 20px;
+    height: 250px;
+}
+
+/*TODO DEL FOOTER(PIE DE PAGINA)*/
+footer{
+    background-color: #C6d5c5;
+    height: 160px;
+    padding-left: 40px;
+    padding-top: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.foot1{ /*CONTACTO*/
+    float:left;
+    width: 25%;
+    text-align: center;
+}
+/*QUITAR DISEÑO DE HIPERVINCULOS EN FOOTER*/
+.hiperfooter{
+    text-decoration: none;
+    color: black;
+}
+/*FIN DE FOOTER*/
+
+
+/*IMAGENES*/
+
+/*IMAGENES GRANDES(IMAGEN DE BOX)*/
+.imgLarge{
+    width: 70%;
+    align-items: center;
+    display:block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/*IMAGENES BOX2LEFT*/
+.img1Box{
+    margin: 20px;
+    width: 90%;
+    height: 400px;
+    border: solid 2px;
+}
+/*IMAGEN CUANDO PASAN EL MOUSE SOBRE LA IMAGEN*/
+.img1Box:hover{
+    transform: rotateZ(10deg);
+    box-shadow: 2px 2px 10px #82c3a6; 
+}
+
+/*IMAGEN DE BOX2RIGHT*/
+.img2Box{
+    margin: 20px;
+    width: 90%;
+    height: 400px;
+    border: solid 2px;
+}
+/*IMAGEN CUANDO PASAN EL MOUSE SOBRE LA IMAGEN*/
+.img2Box:hover{
+    transform: translate(5px, -20px);
+    box-shadow: 2px 2px 10px #82c3a6; 
+}
+
+/*IMAGENES DEL FOOTER REDES SOCIALES*/
+.redsocial{ /*ANCHO DE IMAGENES*/
+    width: 40px;
+}
+
+/*IMAGENES DE PAISAJES*/
+.blur{ /*HACER BORROSA LA IMAGEN*/
+    filter: blur(10px);
+    width: 100%;
+    height: 100%;
+}
+
+.grayscale{ /*ESCALA DE GRISES AL 100%*/
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+}
+
+.sepia{ /*IMAGEN DE COLOR SEPIA*/
+    filter: sepia(90%);
+    width: 100%;
+    height: 100%;
+}
+.normal{ /*NORMAL SIN EFECTOS*/
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*FIN DE IMAGENES*/
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 600px) { /*CELULAR*/
+    header{
+        height: 140px;
+    }
+    .head1{
+        width: 100%;
+        text-align: center;
+        margin: 5px;
+    }
+    .head2{
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .box{ /*BOX PRINCIPAL*/
+        height: 290px;
+    }
+
+    /*IMAGENES DISEÑO CELULAR*/
+    .imgLarge{
+        width: 100%;
+    }
+    .img1Box{
+        height: 300px;;
+    }
+    .img2Box{
+        height: 300px;;
+    }
+    .redsocial{
+        width: 40px;
+    }
+    /*END IMAGENES*/
+
+    /*BOX SECUNDARIA*/
+    .box2{ 
+        width: 100%;
+        height: 780px;
+    }
+    .box2left{
+        width: 100%;
+    }
+    .box2right{
+        width: 100%;
+    }
+
+    /*CAJAS DE PIE DE PAGINA*/
+    footer{ /*CAJA PRINCIPAL*/
+        padding:5px;
+        height: 400px;
+    }
+    .foot1{ /*CAJA SECUNDARIA*/
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    /*CAJAS DE PAISAJES*/
+    .box3{
+        padding-top: 20px;
+        width: 100%;
+        height: 1800px;
+    }
+    .box3left{
+        margin-left: 40px;
+        width: 80%;
+    }
+    .box3middle{
+        margin-left: 40px;
+        width: 80%;
+    }
+    .box3right{
+        margin-left: 40px;
+        width: 80%;
+    }
+
+}
